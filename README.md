@@ -31,7 +31,7 @@ To build xpropwatch:
 2. `cd xpropwatch`
 3. `make`
 
-Now there should get an executable call `xpropwatch`
+Now there should be an executable in the xpropwatch directory called `xpropwatch`
 
 ## Usage
 
