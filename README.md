@@ -6,29 +6,30 @@ xpropwatch sleeps until a specific x11 window property changes, then prints it, 
 
 The property types that xpropwatch currently supports are:
 
-| Property Type | Output Type                                                                                                                            |
-|-----------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| CARDINAL  | number                                                                                                              |
-| WINDOW    | ID (number)                                                                                                                          |
-| BITMAP    | ID                                                                                              |
-| COLORMAP  | ID                                                                                           |
-| CURSOR    | ID                                                                                            |
-| DRAWABLE  | ID                                                                               |
-| FONT      | ID                                                                                              |
-| VISUALID  | ID                                                                                                             |
-| INTGER    | number                                                                                                           |
-| ATOM      | quoted string                                                                                            |
-| ARC       | object: {"x": number, "y": number, "angles": number[2], "width": number, "height": number} |
-| POINT     | object: {"x": number, "y": number}                                                       |
-| RECTANGLE | object: {"x": number, "y": number, "width": number, "height": number}                    |
+| Property Type | Output Type                                                                                |
+| ------------- | ------------------------------------------------------------------------------------------ |
+| CARDINAL      | number                                                                                     |
+| WINDOW        | ID (number)                                                                                |
+| BITMAP        | ID                                                                                         |
+| COLORMAP      | ID                                                                                         |
+| CURSOR        | ID                                                                                         |
+| DRAWABLE      | ID                                                                                         |
+| FONT          | ID                                                                                         |
+| VISUALID      | ID                                                                                         |
+| INTGER        | number                                                                                     |
+| ATOM          | quoted string                                                                              |
+| ARC           | object: {"x": number, "y": number, "angles": number[2], "width": number, "height": number} |
+| POINT         | object: {"x": number, "y": number}                                                         |
+| RECTANGLE     | object: {"x": number, "y": number, "width": number, "height": number}                      |
 
 
 ## Building
 
 1. `git clone https://github.com/IanS5/xpropwatch`
 2. `cd xpropwatch`
-3. `make`
-
+3. `mkdir build && cd build`
+4. `cmake ..`
+5. `cmake --build .`
 ## Usage
 
 `./xpropwatch [options] <prop-name>`

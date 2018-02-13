@@ -2,3 +2,4 @@
 xpropwatch
 *.o
 .swp
+build
